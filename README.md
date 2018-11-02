@@ -8,19 +8,24 @@ NVIDIA SMI Driver version 410.48
 NOTE: This quickstart guide assumes you have installed docker-ce, NVIDIA driver, cuda, nvidia-cuda-toolkit and nvidia-docker.
 
 1. Clone the repository
+
 `git clone git@github.com:JRWu/gpu-compute-environment.git`
 
 2. Change directories into the repository.
+
 `cd gpu-compute-environment/`
 
 3. Build the container.
+
 `docker-compose up --build -d`
 
 4. Shell into the goup compute environment.
+
 `docker-compose exec project bash`
 
 
-# GUIDE FOR A FRESH LINUX INSTALL WITH NO NVIDIA DRIVERS INSTALLED
+
+# GUIDE FOR A FRESH LINUX INSTALL WITH NO DEPENDENCIES INSTALLED
 NOTE: This guide assumes NVIDIA hardware running ontop of Ubuntu 18.04.
 
 1. Install stable docker-ce. 
