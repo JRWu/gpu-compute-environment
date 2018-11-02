@@ -1,0 +1,12 @@
+version: '2.3'
+
+services:
+  project:
+    build:
+      context: project/
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - ./project/:/project
+    command: tail -f /dev/null
