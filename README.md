@@ -3,7 +3,6 @@
 Features Cuda compilation tools, release 10.0, V10.0.130
 NVIDIA SMI Driver version 410.48
 ```
-
 # Quickstart 
 NOTE: This quickstart guide assumes you have installed docker-ce, NVIDIA driver, cuda, nvidia-cuda-toolkit and nvidia-docker.
 
@@ -19,11 +18,9 @@ NOTE: This quickstart guide assumes you have installed docker-ce, NVIDIA driver,
 
 `docker-compose up --build -d`
 
-4. Shell into the goup compute environment.
+4. Shell into the gpu compute environment.
 
 `docker-compose exec project bash`
-
-
 
 # GUIDE FOR A FRESH LINUX INSTALL WITH NO DEPENDENCIES INSTALLED
 NOTE: This guide assumes NVIDIA hardware running ontop of Ubuntu 18.04.
@@ -97,3 +94,9 @@ docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
 
 If the command did not throw an error, you may proceed to the Quickstart portion.
 
+# Troubleshooting
+Add notes for how to log into nvcr.
+
+Add notes for how to debug containers.
+
+Add notes for how to purge existing containers & rebuild from scratch.
