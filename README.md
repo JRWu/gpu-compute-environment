@@ -22,7 +22,7 @@ NOTE: This quickstart guide assumes you have installed docker-ce, NVIDIA driver,
 
 `docker-compose exec project bash`
 
-# GUIDE FOR A FRESH LINUX INSTALL WITH NO DEPENDENCIES INSTALLED
+# Full Guide (Assuming fresh install with nothing installed yet)
 NOTE: This guide assumes NVIDIA hardware running ontop of Ubuntu 18.04.
 
 1. Install stable docker-ce. 
@@ -99,4 +99,6 @@ Add notes for how to log into nvcr.
 
 Add notes for how to debug containers.
 
-Add notes for how to purge existing containers & rebuild from scratch.
+To delete ALL Docker-related volumes, images, networks and containers run the following script. WARNING: THIS STEP CANNOT BE REVERSED.
+
+`bash tools/clean_docker.sh`
