@@ -1,0 +1,6 @@
+# Ignore everything in the project directory. Remove the "*" to include files you wish to preserve for git.
+*
+
+# Keep these files:
+!.gitignore
+!Dockerfile
