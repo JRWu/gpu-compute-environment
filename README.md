@@ -14,13 +14,17 @@ NOTE: This quickstart guide assumes you have installed docker-ce, NVIDIA driver,
 
 `cd gpu-compute-environment/`
 
-3. Build the container.
+3. Rename the project from <project:> to <my_project:>. You can set "my_project" to be whatever you want. This step is important if multiple users on a single system wish to use this gpu-compute-environment. 
+
+`sed -i -e 's#project:#my_project:#g' docker-compose.yml`
+
+4. Build the container.
 
 `docker-compose up --build -d`
 
-4. Shell into the gpu compute environment.
+5. Shell into the gpu compute environment using the <my_project> name you set before.
 
-`docker-compose exec project bash`
+`docker-compose exec my_project bash`
 
 # Full Guide (Assuming fresh install with nothing installed yet)
 NOTE: This guide assumes NVIDIA hardware running ontop of Ubuntu 18.04.
