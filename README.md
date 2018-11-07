@@ -14,7 +14,7 @@ NOTE: This quickstart guide assumes you have installed docker-ce, NVIDIA driver,
 
 `cd gpu-compute-environment/`
 
-3. Rename the project from <project:> to <my_project:>. You can set "my_project" to be whatever you want. This step is important if multiple users on a single system wish to use this gpu-compute-environment. 
+3. Rename the project from 'project:' to 'my_project:'. You can set 'my_project' to be whatever you want. This step is important if multiple users on a single system wish to use this gpu-compute-environment. 
 
 `sed -i -e 's#project:#my_project:#g' docker-compose.yml`
 
