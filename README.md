@@ -99,6 +99,16 @@ docker run --runtime=nvidia --rm nvidia/cuda:9.0-base nvidia-smi
 If the command did not throw an error, you may proceed to the Quickstart portion.
 
 # Troubleshooting
+Sometimes the command:
+
+```
+
+ldconfig
+
+```
+
+Must be run within the container before the GPU is usable.
+
 Add notes for how to log into nvcr.
 
 Add notes for how to debug containers.
